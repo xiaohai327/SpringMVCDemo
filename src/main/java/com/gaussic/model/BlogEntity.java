@@ -12,11 +12,11 @@ import java.util.Date;
 @Table(name = "blog", schema = "springdemo", catalog = "")
 public class BlogEntity {
     private int id;
-    private String title;
-    private String content;
+    private String title;   //博客标题
+    private String content;  //博客内容
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date pubDate;
-    private UserEntity userByUserId;
+    private UserEntity userByUserId;   
 
     @Id
     @Column(name = "id", nullable = false)
